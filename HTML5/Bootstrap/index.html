@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar bg-danger mb-3" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row"> 
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-3">
+               
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+                    <input type="tex" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Apellido:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                </div>
+                
+                
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Correo Electronico:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Deje su mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">Button</button>
+                </div>
+               
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-3">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Edad</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="" class="form-label">Fecha de Nac:</label>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAABDlBMVEXr4fz////w5v/x5//u5P8jDz3z6f8AACoAACczFkIvFUFKIkkaCjtGIEhPJEo7G0UAACQnET8SBjjaz+wgCjsNAC/g1fITADIWCDkKAC3Ow+BUJ0xAHUYbADcMAzYVADOroL0yIUq/tdGjmLWHfJlfLE8AACHQzdVLP1+3srt9cpCyqrYqF0RxZYTFutYAAB6jm6heQGNgS2iSiKW1qsdaTW47LFJnRGYlADUsADbm4+c2ADYlHUSMhJQAADEAAA9mWnp2UW6CY3+dhKAhAC5aIEdTDz1KMVZlNVc4I0pQOFloTmpRL1Q/Cj+LeIsTACU9AD4vADBCAjmVjpza1tzu7O8dACoAAABgU3QgAD3kMzBTAAALbklEQVR4nO2cC3vbthVAGZIAaaeZlREkRi0IqEdlRtXDjR6zk7RWNyeZszrNlqRL/v8f2QX4ACjZauzsm+Xunq9NbJLi4/AC9wJk5DgIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAI8jvGd+mX4nn+bZ/trkGj3vjp903+cjk//fVvExRo4zvDs5O9vb0D4JHmwaMHivvAHzR/rvj225cvX/3U9m77nHcHP3l9otVV8oy7TXmal6+66K/mdRV6X+zv21dtbL8FtH+8t3dtf393b/u8dwM/Otvbu76/lxn6U7i94/0b+Hv5E/Z+Crpg+/u2vt/0Vwh8ddsnvhvQ1w/3b+LvVYTJA3DPlb7an9WOS4dX+MPcqyn1Vf3fm6eaf5R8//P9i+fvLi7p/1CfptJX+Dt+cm+DZ4fvHzy/v+4P9WlqfftX6VMcfn+x5g/1adxzZvm7St+9e2/fNf2hPo3SZ/xdre/e22b8oT6N2wF9tb8t+u7db/R/qE9T6Kv8bdN3dGHnX9SnKfWV/kSt77tfjk+Ap4cmAz+365d/oT5Fpe/hur4TPQLZ+9X4+6ddP6M+Degjxt+6vkeP9p7W+t7Z4w/Up1H6jD+5Hn0HB+8a+ur8gfo0Wl/p76Gt77jU97PdeI0/1KdxO4IYf7a+YgLm7Kha8uH5A8sf6tNA9DHjz9I3OAbOjn+og+/txQPLH+rTKH3aH2nqe3ao+PDR1C0n9fzffdRX4Xa+IcYfv7Js/mg9+1X+UJ9G6TP+4iv0fTw6acw/30d9BUXqqPxdre/R86Y/1KdxX4hvjL+r9KnM0Yw/1KdR+oy/LfrW/KE+jdZX+zP6PhwpvnvyzPj7+cDy9xz1KQp9lb/U1H2hEKryi1e1vsMT6/kl6tOU+kp/Pxp9spq/N3MGFwfGH+rTuC/++I3xt65P+fulbr/jC/P8HPVpQN+fjL8NfeDvrJ7xe39i3j9AfRqlz/gLNvTt753Vy45ODmp/qE+j9dX+bH3V84/wmaWv9of6NIW+yp+lj5fz91bq+OHEvP2M+jTui8eWv6BRuCjCp2bS5an19jjq0yh9xp/Rd/iD4v3RB1M2fyxnUFGfQeur/QVbBm2QeK0XAFGfptBX+dum79mv9guUqE9T6iv9bdH38WDffgH1BPUpKn2Fv6v1PSnfIK/8oT4N6Hts4u8KfR+fvOHN9+8PUJ9G66v9/fj+cJ0nR2/fcMnM+7uoz8J98WPDX1gSVMRSMPv93dLfMepT0EKfnT8UTM2/WA+AN/xh9GnostB3XX9nCeoD6DB4fAN/e3v4j7IU7nz6+Dr+SoEnQ3rbZ74blLnjmv5+xa6vwJ2fNvR9kb9jDL4KOqv9fWn8HS8w9mpobxpcx9/DdIz2LGi0mk5b6/VyQZqmsYZzLjXpmy623AY+dbpZ74vI5hHF2NvAd78UlIcg/22wfX0V85p2Qm82JAX1X7X+7uJHp3W1EcadmXOTC53Ps+Q31kc3PL8dx48CQgRXSEFYLNrX95cM0tNtg1mfBafd32fPoPSJ8UzRXwWSsOD637SScBJu1ddhwe9YX5pRT0GdcUzk6tqDg/97fVWDpQtBWvaF+sAlH2ouvUSfb29yhT57i0sPo5bveDnQ1OdmMWmZ1kv9qNttO16jO3Sp0+5O2k41CIPfJQmj4itKiyVuMul2J4lD1Qd9SkHfpF7v679cL4G96DOAdN+edNuJZ6X9YhsXDj9xdnmovKZvnoKJyovTH7UgH4fLnhUDtLsIwiBoyfGEFh/Jc0ZYrhnDIt/rLdUUQtj6vJjBr+1lTqr1C6p/zx06z1th8G84lD8Z5mqHcJiZUx0mWebLhGYddfh4nOxu2bOmrxeTafmzN+GciTiNhQjOo2oLbzwQjKepZGKqJz/dbBoTQriaXglzteR1wARskXIhTiPfn5zGjBCp1qeflb6BkD7sRXI5iHw3O5VSwlG4YCmr7lwyFaEzbqnlgsngBtXA/4iGPp/mQuRFY4HLZCxc9ea9PCQiLi+MjgMiR/0s6zNBAh1sk+FQQPIeKmauQz9BT7iYZfNs9ilV+trj4YiIlV4/9GC/Ien0w6AznA1HbdA3CPNhL8tmecjE5/KskhYR/SBcwNFXAWNiZ5/PaX3z8suVoxUn027h0l8KJibUdT2aQW2Tly21RfgK+jTo8BaStOaunraq+z4X7LRI0KWeqz7ozKJm3+c5Wh/E4tyjnuoa3WwIH9VbdwWLy9l80EdEMFfLaTcl8tOu9n+67lsMx8BqGQgZ9MruvxeQcF78THvQIypTjrtkbFl0hL76J70jvYGded0sFab0Ke+EnXm1vmBifNRf50y7IZHFj0pfWp6JunutXX3EVIw69HywYEQMqzynmvGiukZvycQn3VBDEpbRCZEIgifqshr6erHsr8XKhj5xeW0JxwyL7UBfeWuKxXJXnzFpfbyYb08548syLhLVput8ARklUH/3OSMmtEaM91WxsRZ9bOQ0vyB8Q18wb+YCaLmaoYx7eg3o47OqjoE7Yh11t1D6+CxqK+azDheDTBdnXWgxiX3JShD9JMS4vhA6LgPU1ucnEFyjXgQd2+Vls96XnQp8msz7RWLJy/uh9AVVlMMn4FbuaPIoB216lOBSdyXJVJmAICKBdcchYkAA5AATFI4349AROmujDjqDhhcH5+MsolVCX9cnrRNwo1UacK4LH0Fkra8uP+GOBNsHhbdIs+7z/VHRy6kCkFn6pG7KlLGydSlUo+qs933KagDFGpNpKy9Tz2bfZ3bstqGETIPPywWwtKPPmrqAWzm5C/oc2pe6l1P6xKa+hxv6NqIP9pH0FnELQkkMVlrGNn0OlEejuVP0fX3JL4k+J7kz+pQ2pUKP3swYNCkb77LRePtc5Oupo9gL9aLeIhQk1Ftv0ef2UvYwKXcJnamlr96jOsW70XgLfRO/KFFM7zMJ9EwCXQmr5lCJZLWeOur9ujSCwnukFm/RB3vkM6tCMfpM3ldHT7fOZt8e6413KIsplyQmpp3SGSfCV91aTLjxJMpYTOSl0eG2VfZ2tuvLhfEEjdToM6UeVSlqhwsXK3U4DFBXShfCOmfIBHp8CyOyNKuaGoxFBoU1RgLT1Kydt4pb0XC0oa++S1TdnFof4dU2LiSs2Y6+VlkWLsWTShjIChLrQYMa3aZls6JjXpQz6moZK+aP3IizciQMXWLcK6f//LZb1cweNLpYr/8kYCRSFYZNfWNZzVHQdsoa+soKk/ZjO4/sFkqf7Hf1g8psyCFdjooVdAE5eAZJgDpD0FBciwo/cd5WWbLdEdVQlA45YVmUAOBjNIt8nUfb56yY+Yf8QGSvWL+eOuAuxUNfTR9kqezY+lgAI0g4eh/u7/owcGfQgzZZvBUVS8LSTnmj/WQkSTwa91efOeHLcnPamzKR5v1hHjA2KAf1fhQykoapmu8DlTwcLeBjy4AJWe5MQFDD+kDP9zUKF5pLwtmqP+4EwdguXETW0ssJtOh8R2NPXfqUc8n1/3EajsyMr5/kLSGEhP8Gq3opzaAoFhKWpnxexYTbJaF6FS1YgL5pLIoNZLgs54nd9nlLrY+Z0jflqXX8pJNC6SclH4zpMAxN2exkU/gMrAtzZ2f1OcmwXzLrZW1qjeV92h2PBq1WZ2xNLzleMsv5YCBy+4m66056aheQBbx2b7UMB4OwM+7W76T5tK3Xgxw/ggNax/f9WR62BiPY2s36/Xk1ZRAkNBou0wFfzHe15Wq8mo23XGAQ7CS+t/ZmXjHNSZuTJr6r96B/opA8Erf5sWK9LqI9r5lGIWMl8IcaaXvlUymtz4cu0fXXD4T8NoW+2z6LOwvq+ypQ31eB+r6KZMBQ381Jwp2dY7kTVK/LIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIMjd4T9/KrlxSs16tAAAAABJRU5ErkJggg==" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                
+            </div>
+        </div>
+
+    </div>
+   
+    
+
+</body>
+</html>
