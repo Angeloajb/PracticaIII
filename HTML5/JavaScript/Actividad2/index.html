@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Funciones</title>
+</head>
+<body>
+
+    <nav class="navbar bgr-dange mb-3" data-bs-theme="dark" style="background-color: #fecd0afd;">
+        <div class="container-fluid">
+            <a class="navbar-brand"  href="#" style="color: black;"><h4>Concesionaria de AUTOS</h4></a>
+        </div>
+    </nav>
+  
+            
+                
+                 
+    <table class="table table-success table-striped w-50 text-center"  >                
+        <thead>
+            <tr>
+                <th>VEHICULOS</th>
+                <th>PRECIO DE LISTA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FORD KA</td>
+                <td>$ 2.900.000</td>
+            </tr>
+            <tr>
+                <td>FORD FISTA</td>
+                <td>$ 3.350.000</td>
+            </tr>
+            <tr>
+                <td>FORD FOCUS</td>
+                <td>$ 3.960.000</td>
+            </tr>
+        </tbody>
+        
+    </table> 
+                   
+                  
+           
+
+
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="mb-3">
+                    <label class="form-label">VEHICULOS:</label>
+                    <select onchange="cambiar_label()" class="form-select"  id="slt_operacion">
+                        <option selected disabled value="-1">Selecione un Vehiculo</option>
+                        <option value="0">FORD KA  <span>Descuento 15%</span></option>
+                        <option value="1">FORD FIESTA <span>Descuento 5% </span></option>
+                        <option value="2">FORD FOCUS <span>Descuento 10% </span></option>
+                  
+                    </select>
+                </div>
+             
+               
+                <button onclick="recolectar()" id="btn_calcular" class="btn btn-success">Calcular</button>
+
+                <h1 id="h_resultado"></h1>
+
+
+            </div>
+
+
+            <div class="col-lg-6">
+                <h4 id="h_resultado"></h4>
+            </div>
+        </div>
+        
+    </div>
+    <script src="funciones.js"></script>
+</body

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Funciones</title>
+</head>
+<body>
+
+    <nav class="navbar bgr-dange mb-3" data-bs-theme="dark" style="background-color: #fecd0afd;">
+        <div class="container-fluid">
+            <a class="navbar-brand"  href="#" style="color: black;"><h4>Usando Funciones con JavaScript</h4></a>
+        </div>
+    </nav>
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="mb-3">
+                    <label class="form-label">Operación:</label>
+                    <select onchange="cambiar_label()" class="form-select"  id="slt_operacion">
+                        <option selected disabled value="-1">Selecione Operación</option>
+                        <option value="0">Tension</option>
+                        <option value="1">Resistencia</option>
+                        <option value="2">Corriente</option>
+                  
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label id="lb_1" class="form-label">Dato 1</label>
+                    <input id="inp_d1" class="form-control" type="number">
+
+                </div>
+                <div class="mb-3">
+                    <label id="lb_2" class="form-label">Dato 2</label>
+                    <input id="inp_d2" class="form-control" type="number">
+                    
+                </div>
+                <button onclick="recolectar()" id="btn_calcular" class="btn btn-success">Calcular</button>
+            </div>
+            <div class="col-lg-6">
+                <h4 id="h_resultado"></h4>
+            </div>
+        </div>
+        
+    </div>
+    <script src="funciones.js"></script>
+</body
